@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- BS5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- BS5 -->
+    <!-- fonts DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!-- fonts Dm Sans-->
+    <!-- Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Fonts Poppins -->
+     <!-- font-awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+     <!-- font-awesome -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-column">
+            <div class="container-xl">
+              <a class="navbar-brand" href="#"><img src="assets/ultra-header-logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll justify-content-center mx-auto w-75" >
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Listing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                <div class="button-wrapper-header">
+                    <a href="#" class="wrapper-sign-in d-flex flex-row justify-content-between align-items-center w-auto mx-2 font-text-b ">
+                        <i class="fa fa-user-circle mx-2 color-primary" aria-hidden="true"></i>
+                        Sign In
+                    </a>
+                    <a href="#" class="wrapper-listing-btn d-flex flex-row w-auto p-0 border-2 color-primary font-text-b">
+                        <i class="fa fa-home mx-2 color-primary"></i>
+                        Add Listing
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper-serach-bar container-fluid d-none d-lg-flex ">
+                    <div class="col-xl-3 rent-sale-wrappar">
+                        <a href="#" class="for-rent font-text-f">
+                            For Rent
+                        </a>
+                        <a href="#" class="for-sale">
+                            For Sale
+                        </a>       
+                    </div>
+                    <div class="col-xl-7 search-wrapper-col">
+                        <div class="search-wrapper">
+                            <form method="get">
+                                <div class="w-75 search-wrapper-section">
+                                    <div class="w-100 d-flex">
+                                        <input class="form-control" type="search" placeholder="Enter Keyword" aria-label="Search">
+                                        <button class="btn btn-serach" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </div>
+                                    
+                                </div>
+                                <div class="w-25 all-types-btn">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>All Types</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </div>
+                              </form>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-2 advance-wrapper">
+                        <a href="#">
+                            Advnace <i class="fa fa-plus-circle color-primary" aria-hidden="true"></i></div>  
+                        </a>
+                    </div>
+            </div>
+          </nav>
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

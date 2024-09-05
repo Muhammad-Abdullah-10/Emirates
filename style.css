@@ -1,0 +1,247 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset CSS */
+
+/* Variables */
+:root {
+    font-size: var(--text-size);
+    font-family: var(--Poppins);
+    font-weight: 400;
+	line-height: 1;
+    --primary-color  : #1db2ff;
+    --secondary-color : #E7F6FD;
+    --text-color : #333;
+    --color-white: #f3f3f3;
+    --DMSans: "DM Sans", sans-serif;
+    --Poppins : "Poppins", sans-serif;
+    --text-size: 16px
+}
+.color-primary{
+    color: var(--primary-color);
+}
+.font-text-b{
+    font-size: var(--text-size);
+    color: var(--text-color);
+    font-weight: 400;
+    font-family: var(var(--DMSans));
+}
+.font-text-w{
+    font-size: var(--text-size);
+    color: #f3f3f3;
+    font-weight: 400;
+    font-family: var(var(--DMSans));
+}
+/* Variables */
+
+/* 
+***
+***
+***
+My CSS
+****
+***
+*** */
+
+header .navbar{
+    background: #f3f3f3;
+    padding-bottom: 0;
+}
+a.navbar-brand {
+    width: 200px;
+}
+.button-wrapper-header {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+.button-wrapper-header div{
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+.nav-item .active, .nav-link{
+    color: var(--text-color) !important;
+}
+.nav-item .active{
+    font-weight: 500;
+}
+.wrapper-sign-in{
+    text-decoration: none;
+}
+.wrapper-listing-btn{
+    text-decoration: none;
+    padding: 15px 20px !important;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+}
+.wrapper-sign-in:hover , .wrapper-listing-btn:hover{
+    color: var(--primary-color);
+}
+.wrapper-listing-btn:hover{
+    color: var(--primary-color);
+    /* font-weight: bold; */
+    /* font-family: var(--Poppins); */
+    border-color: var(--primary-color);
+}
+.wrapper-serach-bar{
+    background: var(--secondary-color);
+}
+
+.rent-sale-wrappar {
+    display: flex;
+    justify-content: center;
+    border-left: 5px solid var(--color-white);
+}
+.rent-sale-wrappar a{
+    text-decoration: none;
+    color: var(--text-color);
+    /* border-left:1px solid var(--primary-color); */
+    /* border-right:1px solid var(--primary-color); */
+    height: 100%;
+    padding: 1.5em 0.75em;
+    font-weight: 500;
+}
+.rent-sale-wrappar a:hover{
+    background-color: var(--primary-color);
+    color: var(--color-white);
+}
+.w-75{
+    width: 75%;
+}
+.w-25{
+    width: 25%;
+}
+.search-wrapper-col{
+    border-left: 1px solid var(--color-white);
+    height: auto;
+}
+.search-wrapper{   
+    display: flex;
+}
+.search-wrapper form ,.search-wrapper form .w-75 {
+    width: 100%;
+    display: flex;
+}
+.search-wrapper form .w-100,.search-wrapper form .w-25{
+    margin-right: 0.5em !important;
+}
+.search-wrapper-section .form-control{
+    border: 0;
+    box-shadow: none;
+    background-color: #fff !important;
+}
+.search-wrapper form input,.search-wrapper form input::placeholder{
+    font-family: var(--DMSans);
+    font-size: var(--text-size);
+}
+.search-wrapper-section .form-control,
+.search-wrapper .form-select{
+    padding: 10px 20px;
+}
+.search-wrapper-section .form-control:focus,
+.search-wrapper .form-select:focus{
+    box-shadow: none;
+}
+.search-wrapper-section .btn-serach{
+    background-color: #fff !important;
+}
+.search-wrapper-section .btn-serach i{
+    font-size: 1.2em;
+    color: var(--primary-color);
+}
+.search-wrapper .form-select {
+    border: 0;
+}
+.all-types-btn .form-select option{
+    border-bottom: 1px solid var(--primary-color);
+}
+.advance-wrapper a{
+    font-size: var(--text-size);
+    text-decoration: none;
+    color: var(--text-color);
+}
+.advance-wrapper a:hover{
+    color: var(--primary-color);
+}
+
+
+
+
+/***************
+***************
+***************
+***************
+***************
+***************
+***************/
+@media (min-width:1400px) {
+    .wrapper-serach-bar{
+        /* padding-top: 1.5em;
+        padding-bottom: 1.5em; */
+        max-width: 1296px;
+    }
+}
+@media (min-width:992px) and (max-width:1400px) {
+    header .navbar .container-xl{
+        max-width: 100%;
+    }    
+    .wrapper-listing-btn{
+        padding: 5px 10px !important;
+    }
+    .button-wrapper-header .font-text ,
+    .button-wrapper-header div{
+        font-size: 1em;
+    }
+}
+@media (min-width:992px) and (max-width:1100px) {
+    .button-wrapper-header .font-text ,
+    .button-wrapper-header div{
+        font-size: 0.8em;
+    }
+}
+@media (max-width:767px) {
+    .navbar-nav{
+        margin-left: 1em !important;
+    }  
+}
