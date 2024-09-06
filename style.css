@@ -445,3 +445,156 @@ a.navbar-brand {
   }
 }
 /* Home Slider Media Query */
+
+/* Discover Properties  */
+.discoverPropsCards {
+  margin: 5em auto;
+  height: 100vh;
+}
+.discoverPropsCards .discoverHeadingCards {
+  font-size: 1.75em;
+  font-family: var(--Poppins);
+  color: var(--text-color);
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.discoverPropsCards .discoverSubHeadingCards {
+  font-size: 0.875em;
+  font-family: var(--Poppins);
+  color: var(--text-color);
+  opacity: 0.75;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.wrapper-grid-cards {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.discoverPropsCards .CardsRow {
+  margin: 3em auto;
+}
+.card-single {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  max-width: 280px;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+.card-single:hover .wrapper-dark-absolute {
+  height: 500px;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  background: var(--text-color);
+  opacity: 0.5;
+  z-index: 99;
+}
+.view-all-button {
+  /* display: none; */
+  background: #fff;
+  padding: 10px 20px;
+  justify-self: center;
+  align-self: center;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+  margin: auto;
+  font-weight: 500;
+  font-family: var(--Poppins);
+  z-index: 100;
+  margin-top: 85%;
+}
+.card-single:hover .view-all-button {
+  display: block;
+}
+.view-all-button:hover {
+  color: var(--primary-color);
+}
+.card-prop-details {
+  justify-self: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  transform: translateY(50%);
+  background: var(--color-white);
+  margin: 0 auto;
+  padding: 0.875em;
+  border-radius: 20px;
+  z-index: 100;
+  position: relative;
+}
+.card-prop-details span {
+  text-align: center;
+}
+.card-prop-details .city {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  background: var(--primary-color);
+  font-family: var(--Poppins);
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  border-radius: 10px;
+  /* width: auto; */
+  top: -20%;
+  color: var(--color-white);
+}
+.card-prop-details .number {
+  font-size: 2em;
+  font-weight: 600;
+  font-family: var(--Poppins);
+  color: var(--text-color);
+}
+.card-prop-details .prop-title {
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 0.5em;
+  font-family: var(--Poppins);
+  color: var(--text-color);
+}
+/* Discover Properties  */
+
+/* Discover Properties Media*/
+@media (max-width: 1200px) {
+  .card-single {
+    justify-self: center;
+    margin-bottom: 3.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .wrapper-grid-cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+    align-items: center;
+  }
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  .wrapper-grid-cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 549px) {
+  .discoverPropsCards .discoverHeadingCards,
+  .discoverPropsCards .discoverSubHeadingCards {
+    text-align: center;
+  }
+  .wrapper-grid-cards {
+    grid-template-columns: 1fr;
+  }
+  .card-single {
+    justify-self: center;
+    margin-bottom: 3.5em;
+  }
+}
+/* Discover Properties  Media*/
